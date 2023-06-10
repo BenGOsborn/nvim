@@ -8,8 +8,6 @@ return require('packer').startup(function(use)
 				requires = { {'nvim-lua/plenary.nvim'} }
 		}
 
-		use({ 'rose-pine/neovim', as = 'rose-pine', config = function() vim.cmd('colorscheme rose-pine') end  })
-
 		use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
 		use {
@@ -31,6 +29,8 @@ return require('packer').startup(function(use)
 								{'L3MON4D3/LuaSnip'},     -- Required
 						}
 		}
+
+		use({ 'rose-pine/neovim', as = 'rose-pine', config = function() vim.cmd('colorscheme rose-pine') end  })
 end)
 
 
