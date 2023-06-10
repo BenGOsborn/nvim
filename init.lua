@@ -1,3 +1,6 @@
 require("plugins.packer")
 require("plugins.config")
 require("plugins.treesitter")
+require("plugins.lsp")
+require("plugins.search")
+require("plugins.color")
